@@ -1,9 +1,8 @@
 from os import path
 from pathlib import Path
 
+from config import Config
 from pydantic import BaseModel
-
-from pyconfparser.config import Config
 
 
 class ConfigFactory:
