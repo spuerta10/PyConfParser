@@ -2,8 +2,9 @@ from json import dumps
 from pathlib import Path
 
 import pytest
-from json_config import JsonConfig
 from pydantic import BaseModel
+
+from pyconfparser.json_config import JsonConfig
 
 
 class ConfigurationSchema(BaseModel):

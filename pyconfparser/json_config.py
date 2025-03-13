@@ -1,7 +1,8 @@
 import json
 
-from config import Config
 from pydantic import BaseModel
+
+from pyconfparser.config import Config
 
 
 class JsonConfig(Config):

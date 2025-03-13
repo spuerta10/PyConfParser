@@ -1,8 +1,9 @@
 from pathlib import Path
 
 import pytest
-from config import Config
 from pydantic import BaseModel
+
+from pyconfparser.config import Config
 
 
 class ValidConfiguration(Config):
