@@ -35,6 +35,9 @@ class Config(ABC):
         return allowed_types
 
     def __init__(self, conf_path: None | str = None):
+        if conf_path and not Path(conf_path).exists():
+            raise ValueError(self.ERROR_PATH_DOES_NOT_EXIST.format(conf_path))
+
         abs_path: str | None = path.abspath(conf_path) if conf_path is not None else None
         self._path: str | None = abs_path
 
